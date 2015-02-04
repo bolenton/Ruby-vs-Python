@@ -28,10 +28,9 @@ while turns < 10
 	turns = turns + 1
 	turns_left = 10 - turns
 	puts "You have #{turns_left} turns remaining."
-	
-	if turns == 10
-		puts "\n\nMy number was #{number}."
-		puts "Game Over. You Lose.\n\n\n\n"
-	end
 end
  
+if turns == 10
+	puts "\n\nMy number was #{number}."
+	puts "Game Over. You Lose.\n\n\n\n"
+end

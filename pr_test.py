@@ -12,7 +12,7 @@ print("I will give you 10 tries to guess my number, ready? GO!")
 number = randint(1, 100)
 turns = 0
 
-while turns < 10:
+for turns in range(10):
 	guess = int(raw_input("\nWhat do you think my number is >>> "))
 	
 	if guess == number:
@@ -28,6 +28,6 @@ while turns < 10:
 	total_turns = 10 - turns 
 	print("You have {} turns remaining.").format(total_turns)
 
-	if turns == 10:
-		print("\n\nMy number was {}.").format(number)
-		print("Game Over. You Lose.\n\n\n\n")
+if turns == 10:
+	print("\n\nMy number was {}.").format(number)
+	print("Game Over. You Lose.\n\n\n\n")
